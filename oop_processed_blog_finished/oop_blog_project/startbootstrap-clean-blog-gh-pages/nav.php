@@ -1,3 +1,4 @@
+ <?php  session_start(); ?>
  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">Blog Project</a>
@@ -27,6 +28,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Welcome <?php echo $_SESSION['username']; ?></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.php">Logout</a>
           </li>
         </ul>
       </div>
